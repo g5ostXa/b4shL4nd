@@ -6,10 +6,10 @@
 
 # Run this script in the same directory you want your repo
 # with the REPO, REPO_URL and GIT_USERNAME as arguments.
-# ------------------------------------------------------------------------------------------------------
-# Do not put 'https://' in front of the REPO_URL; this is done automatically.
-# ------------------------------------------------------------------------------------------------------
-# (e.g):
+
+# Do not run as root.
+
+# (e.g): 
 # cd ~/path/to/your-repos-dir/ && source ~/path/to/mkrepo.sh "somerepo" "https://github.com/gitusername/somerepo.git" "gitusername"
 
 REPO="$1"
