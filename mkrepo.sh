@@ -9,7 +9,7 @@
 
 # Do not run as root.
 
-# (e.g): 
+# (e.g):
 # cd ~/path/to/your-repos-dir/ && source ~/path/to/mkrepo.sh "somerepo" "https://github.com/gitusername/somerepo.git" "gitusername"
 
 REPO="$1"
