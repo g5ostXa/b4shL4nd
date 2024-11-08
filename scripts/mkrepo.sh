@@ -53,7 +53,7 @@ git init
 git branch -M main
 
 touch README.md
-echo "$REPO" >>README.md
+echo "$REPO_NAME" >>README.md
 
 git add .
 git commit -S -m "initial"
