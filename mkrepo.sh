@@ -54,9 +54,6 @@ git branch -M main
 
 touch README.md
 echo "$REPO" >>README.mdl
-iyhu
-
-kujhbiuygh8976
 
 git add .
 git commit -S -m "initial"
