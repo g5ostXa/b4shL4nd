@@ -35,7 +35,7 @@ is_installed_figlet() {
 		echo "st4rtH.sh"
 		echo "---------------------------------"
 	else
-		figlet smslant "st4rtH"
+		figlet -f smslant "st4rtH"
 		echo ""
 		echo "---------------------------------------------"
 	fi
