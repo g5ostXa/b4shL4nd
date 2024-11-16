@@ -1,12 +1,20 @@
 #!/bin/bash
 
 # --------------------------------------------------
-# mkrepo.sh | By g5ostXa | 2024
+# mkrepo.sh | By g5ostXa (2024)
 # --------------------------------------------------
-# Run this script in the same directory where you want your repo
-# Arguments: --repo-name=NEWREPO --repo-url=REPO_URL --git-user=USERNAME --git-client=GIT_CLIENT
-# Usage example:
-#   ./mkrepo.sh --repo-name=NEWREPO --repo-url=https://github.com/git-user/newrepo.git --git-user=USERNAME --git-client=github
+
+# IMPORTANT:
+# Run this script in the same directory you want your new repository.
+# DO NOT run as root.
+# Arguments: --repo-name
+#            --repo-url
+#            --git-user
+#            --git-client
+#
+# Usage examples:
+# 	./mkrepo.sh --repo-name=repo123 --repo-url=https://gitlab.com/alexa/repo123.git --git-user=alexa --git-client=gitlab
+#   ./mkrepo.sh --repo-name=firefox --repo-url=https://github.com/erika/firefox.git --git-user=erika --git-client=github
 
 for ARG in "$@"; do
 	case $ARG in
