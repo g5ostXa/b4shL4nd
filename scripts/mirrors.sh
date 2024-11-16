@@ -7,7 +7,7 @@
 # ---------------------------
 # Optional: protonvpn-cli
 # ---------------------------------
-# Requires: reflector gum figlet
+# Requires: reflector | gum | figlet
 # --------------------------------------
 
 # This is a script for automating archlinux mirrorlist management with or without backup.
