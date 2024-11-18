@@ -52,7 +52,7 @@ is_installed_git
 
 # Run main operation if all checks passed
 echo -e "${YELLOW};; Please choose option:${RC}" && echo ""
-AUR_HELPER=$(gum choose "yay" "paru" "aura" "CANCEL")
+AUR_HELPER=$(gum choose "yay" "paru" "CANCEL")
 
 set -e
 
