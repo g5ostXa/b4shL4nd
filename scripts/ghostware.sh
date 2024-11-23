@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# --------------------------
-# getproject.sh | By g5ostXa
-# --------------------------
+# ---------------------------------
+# ghostware.sh | By g5ostXa | 2024
+# ---------------------------------
 check_cloned_repo() {
 	if [ ! -d "$HOME/Downloads/$OPTION" ]; then
 		echo -e "${RED};; Failed to Download $OPTION${RC}"
@@ -13,18 +13,18 @@ check_cloned_repo() {
 }
 
 is_installed_figlet() {
-	clear
 	if command -v figlet >/dev/null 2>&1; then
 		echo -e "${CYAN}"
-		figlet -f smslant "getproject.sh"
+		clear && figlet -f smslant "ghostware.sh"
 		echo -e "${RC}"
 		echo ""
 	else
+		clear
 		echo -e "${CYAN}"
-		echo "--------------------------"
-		echo "getproject.sh"
-		echo "--------------------------"
-		echo -e "${RC}"
+		echo "-------------------"
+		echo "ghostware.sh"
+		echo "-------------------"
+		echo -e "${RC}" && echo ""
 	fi
 
 }
@@ -57,7 +57,7 @@ choose_option() {
 	echo -e "${CYAN};; Select one of g5ostXa's projects to download:${RC}"
 	echo ""
 
-	OPTION=$(gum choose "g5ostXa" "b4shL4nd" "sysctl" "wallpaper" "CANCEL")
+	OPTION=$(gum choose "g5ostXa" "b4shL4nd" "sysctl" "wallpaper" "g5ost4rchives" "CANCEL")
 	if [[ -n "$OPTION" ]]; then
 		if [[ ! "$OPTION" == "CANCEL" ]]; then
 			gum spin --spinner points --title "Installing $OPTION..." -- sleep 3
