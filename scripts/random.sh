@@ -3,6 +3,8 @@
 # -----------------------------------------
 # random.sh | By g5ostXa | 2024
 # -----------------------------------------
+
+# To lazy to complete this useless piece of randomness
 is_randnum_0() {
 	if [[ "$RANDOM_NUMBER" == "0" ]]; then
 		set -e
