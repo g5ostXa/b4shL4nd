@@ -14,7 +14,7 @@ is_randnum_0() {
 is_randnum_1() {
 	if [[ "$RANDOM_NUMBER" == "1" ]]; then
 		set -e
-		gum spin --spinner points --title "Doing some sketchy stuff..." -- sleep 10
+		gum spin --spinner points --title "Sleeping for 10 seconds..." -- sleep 10
 	fi
 
 }
