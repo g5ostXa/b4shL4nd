@@ -15,7 +15,7 @@ check_cloned_repo() {
 is_installed_figlet() {
 	if command -v figlet >/dev/null 2>&1; then
 		echo -e "${CYAN}"
-		clear && figlet -f smslant "ghostware.sh"
+		clear && figlet -f smslant "ghostware"
 		echo -e "${RC}"
 		echo ""
 	else
